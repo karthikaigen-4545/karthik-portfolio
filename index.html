@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karthik Y | Generative AI Specialist • Prompt Engineer • QA Automation</title>
+  <meta name="description" content="Portfolio of Karthik Y – Generative AI Specialist, Prompt Engineer, and QA Automation expert. LLM evaluation, RAG pipelines, multimodal AI, and test automation." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Karthik Y – Generative AI & QA Automation" />
+  <meta property="og:description" content="I build intelligent AI workflows and evaluate LLMs for accuracy, safety & reliability." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans","Helvetica Neue","Arial","sans-serif"] },
+          boxShadow: {
+            glow: "0 0 0 3px rgb(14 165 233 / 0.25)",
+            "neon-sm": "0 0 18px rgb(99 102 241 / .45)",
+            "neon-md": "0 0 36px rgb(14 165 233 / .45)",
+          },
+          backgroundImage: {
+            "radial-fade": "radial-gradient(1200px 600px at 10% -10%, rgba(56,189,248,.25), transparent 60%), radial-gradient(900px 500px at 90% 10%, rgba(99,102,241,.25), transparent 60%), radial-gradient(900px 600px at 50% 120%, rgba(20,184,166,.2), transparent 60%)"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230ea5e9'/><text x='50' y='60' font-size='48' text-anchor='middle' fill='white' font-family='Arial'>KY</text></svg>">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Karthik Y",
+    "url": "https://your-domain.example/",
+    "jobTitle": "Generative AI Specialist, Prompt Engineer, QA Automation Engineer",
+    "sameAs": [
+      "https://www.linkedin.com/in/karthik-y-786238271",
+      "https://github.com/karthikaigen-4545"
+    ],
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Governors State University"},
+      {"@type": "CollegeOrUniversity", "name": "Central Queensland University"}
+    ]
+  }
+  </script>
+
+  <style>
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.show{opacity:1;transform:translateY(0)}
+    .ux-underline{background:linear-gradient(transparent 65%, rgba(14,165,233,.28) 65%)}
+    .glass{backdrop-filter: blur(14px); background: linear-gradient(140deg, rgba(255,255,255,.55), rgba(255,255,255,.35)); border:1px solid rgba(148,163,184,.25)}
+    .glass-dark{backdrop-filter: blur(14px); background: linear-gradient(140deg, rgba(2,6,23,.55), rgba(2,6,23,.35)); border:1px solid rgba(30,41,59,.6)}
+    .floaty{animation: floaty 8s ease-in-out infinite}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+    .typewriter::after{content:"|";animation:blink 1s step-end infinite}
+    @keyframes blink{50%{opacity:0}}
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans">
+
+  <!-- Theme bootloader -->
+  <script>
+    (function(){
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+
+  <!-- Decorative Background -->
+  <div class="pointer-events-none fixed inset-0 bg-radial-fade -z-10"></div>
+  <div class="pointer-events-none fixed -top-24 -right-24 h-72 w-72 rounded-full blur-3xl opacity-50 bg-sky-400/30 floaty -z-10"></div>
+  <div class="pointer-events-none fixed top-1/3 -left-20 h-80 w-80 rounded-full blur-3xl opacity-40 bg-indigo-500/25 floaty -z-10" style="animation-delay: -2s"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-white/20 dark:border-slate-800/60 backdrop-blur bg-white/60 dark:bg-slate-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-indigo-500 text-white grid place-items-center font-extrabold shadow-neon-sm group-hover:scale-105 transition">KY</div>
+          <span class="font-semibold tracking-tight">Karthik <span class="text-sky-600 dark:text-sky-400">Y</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-sky-600">About</a>
+          <a href="#skills" class="hover:text-sky-600">Skills</a>
+          <a href="#experience" class="hover:text-sky-600">Experience</a>
+          <a href="#projects" class="hover:text-sky-600">Projects</a>
+          <a href="#certs" class="hover:text-sky-600">Certifications</a>
+          <a href="#contact" class="hover:text-sky-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="./karthik_y_resume.pdf" download class="hidden sm:inline-flex items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-xl px-4 py-2 text-sm shadow-neon-sm hover:opacity-90">
+            <span>Download Résumé</span>
+          </a>
+          <button id="themeToggle" class="p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle dark mode">
+            <svg id="sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:inline" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v1a1 1 0 11-2 0V4a1 1 0 011-1zm0 11a4 4 0 100-8 4 4 0 000 8zm6-5a1 1 0 110-2h1a1 1 0 110 2h-1zM3 10a1 1 0 100-2H2a1 1 0 100 2h1zm12.657 5.657a1 1 0 00-1.414-1.414l-.707.707a1 1 0 101.414 1.414l.707-.707zM5.05 6.464A1 1 0 103.636 5.05l-.707.707A1 1 0 104.343 7.88l.707-.707zM16.364 5.05a1 1 0 10-1.414 1.414l.707.707A1 1 0 1017.07 5.757l-.707-.707zM5.757 16.364a1 1 0 10-1.414-1.414l-.707.707A1 1 0 105.05 17.07l.707-.707z"/></svg>
+            <svg id="moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:hidden" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pb-8 pt-14 md:pt-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 text-xs px-3 py-1 rounded-full glass dark:glass-dark shadow-neon-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Open to full-time & freelance
+          </div>
+          <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+            Generative <span class="text-sky-600 dark:text-sky-400">AI Specialist</span> · Prompt Engineer · QA Automation
+          </h1>
+          <p class="mt-5 text-lg text-slate-600 dark:text-slate-300">
+            I design prompts, evaluate LLMs, and productionize multimodal AI. Unique hybrid of
+            <span class="ux-underline">LLM evaluation</span> and <span class="ux-underline">QA automation</span> to deliver safe, reliable, user-aligned AI.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:opacity-90 shadow-neon-md">See Projects</a>
+            <a href="./karthik_y_resume.pdf" class="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" download>Download Résumé</a>
+          </div>
+          <div class="mt-4 text-sm text-slate-500 typewriter" id="tw"></div>
+        </div>
+
+        <div class="reveal md:justify-self-end">
+          <div class="relative">
+            <div class="h-52 w-52 md:h-72 md:w-72 rounded-3xl p-[3px] shadow-neon-md bg-gradient-to-br from-sky-400 via-indigo-500 to-cyan-400">
+              <div class="h-full w-full rounded-3xl bg-white/70 dark:bg-slate-900/70 grid place-items-center text-6xl font-extrabold text-sky-600 dark:text-sky-400">KY</div>
+            </div>
+            <div class="absolute -bottom-4 -left-4 glass dark:glass-dark rounded-xl px-3 py-2 text-xs shadow">
+              Chicago, IL · United States
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 reveal">
+      <div class="glass dark:glass-dark rounded-3xl p-6 md:p-8 shadow-neon-sm">
+        <h2 class="text-3xl font-bold">About</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">
+          Hi, I’m Karthik — a Generative AI Engineer specializing in LLM agents, prompt engineering, and multimodal AI systems. I build intelligent products that convert complex workflows into automated, AI-driven solutions — from code-understanding agents to AI-powered automation frameworks.
+        </p>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">
+          I have <strong>2+ years of experience in Generative AI</strong> and <strong>5+ years in QA automation</strong>, giving me a unique advantage: I not only build AI systems but also ensure they are measurable, reliable, and production-ready. My work focuses on:
+        </p>
+        <ul class="mt-4 list-disc pl-5 space-y-1 text-sm text-slate-700 dark:text-slate-300">
+          <li>LLM prompt design & prompt chaining</li>
+          <li>RAG / LangChain / LlamaIndex development</li>
+          <li>Multimodal AI (speech, text, image) using Whisper, DALL·E, etc.</li>
+          <li>Model evaluation, hallucination reduction, automated testing pipelines</li>
+        </ul>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">
+          Currently, I work as a <strong>Generative AI Prompt Engineer at Health Care Service Corporation (Chicago)</strong>, where I build and deploy LLM-powered microservices and AI agents that reduce manual effort across business teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Skills & Tools</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6 reveal">
+        <div class="glass dark:glass-dark rounded-3xl p-6">
+          <h3 class="font-semibold">Generative AI & LLMs</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">GPT-4/ChatGPT</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">LLaMA</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">PaLM</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">LangChain</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">LlamaIndex</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">RAG (Pinecone/FAISS)</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Whisper</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">DALL·E</span>
+          </div>
+        </div>
+        <div class="glass dark:glass-dark rounded-3xl p-6">
+          <h3 class="font-semibold">Automation & QA</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Selenium</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Postman</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">REST-assured</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">JUnit/TestNG/Cucumber</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">API Testing</span>
+          </div>
+        </div>
+        <div class="glass dark:glass-dark rounded-3xl p-6">
+          <h3 class="font-semibold">Cloud & DevOps</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">AWS</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">GCP / Vertex AI</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Azure OpenAI</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Docker</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Jenkins</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Git</span>
+          </div>
+        </div>
+        <div class="glass dark:glass-dark rounded-3xl p-6">
+          <h3 class="font-semibold">Programming</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Python</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">Java</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 dark:bg-slate-800/60 border">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Experience</h2>
+      <div class="mt-6 grid gap-6 reveal">
+
+        <article class="glass dark:glass-dark rounded-3xl p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="font-semibold">Generative AI Prompt Engineer — Health Care Service Corporation</h3>
+            <div class="text-sm text-slate-500">Jan 2024 – Present · Chicago, IL</div>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300 text-sm">
+            <li>Optimized prompts for GPT-3.5/4 & PaLM via APIs → <strong>+30% accuracy & consistency</strong>.</li>
+            <li>Automated LLM eval pipelines (LangChain, LlamaIndex, Prompt Flow) → <strong>−40% manual review</strong>.</li>
+            <li>Hallucination/bias testing with SOC 2 alignment for healthcare workloads.</li>
+            <li>Deployed & monitored models on Vertex AI → <strong>−25% downtime</strong>.</li>
+            <li>Extended multimodal via Whisper STT & DALL·E for TTI workflows.</li>
+            <li>Partnered with PM/DS to align outputs with business goals → <strong>+20% CSAT</strong>.</li>
+          </ul>
+        </article>
+
+        <article class="glass dark:glass-dark rounded-3xl p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="font-semibold">QA Automation Engineer — Wells Fargo</h3>
+            <div class="text-sm text-slate-500">Nov 2022 – Sep 2024 · Chicago, IL</div>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300 text-sm">
+            <li>Built Selenium + Python test suites → <strong>−35% manual QA effort</strong>.</li>
+            <li>Frameworks: TestNG, JUnit, Cucumber → <strong>95% coverage</strong> across apps.</li>
+            <li>API automation with Postman & REST-assured → <strong>+20% release reliability</strong>.</li>
+            <li>Mentored juniors → <strong>+15% team productivity</strong>.</li>
+            <li>CI/CD in Jenkins → <strong>−25% defect leakage</strong>.</li>
+          </ul>
+        </article>
+
+        <article class="glass dark:glass-dark rounded-3xl p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="font-semibold">QA Automation Engineer — 1 Billion Tech Pvt Ltd</h3>
+            <div class="text-sm text-slate-500">Jun 2015 – Oct 2017 · Chennai, India</div>
+          </div>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300 text-sm">
+            <li>Designed manual & automated test suites → <strong>98% defect detection</strong>.</li>
+            <li>BDD frameworks (Cucumber, Gherkin) to improve clarity & reuse.</li>
+            <li>Advanced SQL scripting for DB validations → <strong>+30% accuracy</strong>.</li>
+            <li>Page Object Model adoption → <strong>−25% maintenance</strong>.</li>
+            <li>Set up Jenkins pipelines for faster, reliable releases.</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 reveal">
+      <h2 class="text-3xl font-bold">Projects — AI Agents & Demos</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">A selection of hands-on builds. Each card links to GitHub.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="group glass dark:glass-dark rounded-3xl p-5 hover:shadow-neon-md transition">
+          <div class="aspect-video rounded-2xl bg-gradient-to-br from-sky-200/60 to-indigo-200/60 dark:from-sky-900/30 dark:to-indigo-900/30 grid place-items-center text-slate-600 dark:text-slate-300 text-sm">
+            Demo Visual
+          </div>
+          <h3 class="mt-4 font-semibold">AI Weather Agent — Voice + Auto UI Personalization</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">
+            Streamlit app with auto-location, TTS announcements, Unsplash background themes.
+          </p>
+          <div class="mt-3 text-sm">
+            <a class="underline decoration-dotted" href="https://github.com/karthikaigen-4545/weather_app_agent" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="group glass dark:glass-dark rounded-3xl p-5 hover:shadow-neon-md transition">
+          <div class="aspect-video rounded-2xl bg-gradient-to-br from-sky-200/60 to-indigo-200/60 dark:from-sky-900/30 dark:to-indigo-900/30 grid place-items-center text-slate-600 dark:text-slate-300 text-sm">
+            Demo Visual
+          </div>
+          <h3 class="mt-4 font-semibold">Code → Natural Language Explainer Agent</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">
+            Converts any source code into structured English explanation.
+          </p>
+          <div class="mt-3 text-sm">
+            <a class="underline decoration-dotted" href="https://github.com/karthikaigen-4545/code_to_text_ai" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="group glass dark:glass-dark rounded-3xl p-5 hover:shadow-neon-md transition">
+          <div class="aspect-video rounded-2xl bg-gradient-to-br from-sky-200/60 to-indigo-200/60 dark:from-sky-900/30 dark:to-indigo-900/30 grid place-items-center text-slate-600 dark:text-slate-300 text-sm">
+            Demo Visual
+          </div>
+          <h3 class="mt-4 font-semibold">AI Test Automation Framework</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">
+            AI converts FRS → Test cases → Automatically runs via Selenium.
+          </p>
+          <div class="mt-3 text-sm">
+            <a class="underline decoration-dotted" href="https://github.com/karthikaigen-4545/AI_Test_Automation" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 reveal">
+      <h2 class="text-3xl font-bold">Certifications</h2>
+      <ul class="mt-6 list-disc pl-5 space-y-3 text-sm">
+        <li><strong>Build Website with AI – Simplilearn</strong> (ID: 8784780) — Practical training in AI-powered UI/UX & no-code deployment.</li>
+        <li><strong>Prompt Engineering Applications – Simplilearn</strong> (ID: 8778799) — Optimizing prompts & building enterprise GenAI solutions.</li>
+        <li><strong>Software Testing with Generative AI – Simplilearn</strong> (ID: 8777114) — AI-assisted test automation & defect detection.</li>
+        <li><strong>Intro to Generative AI & Prompt Engineering – CSA</strong> (ID: f5587cexa8iv) — Real-world prompt design & automation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="glass dark:glass-dark rounded-3xl p-6 md:p-8 reveal">
+        <h2 class="text-3xl font-bold">Contact</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Want to collaborate or hire me? Reach out directly.</p>
+        <div class="mt-6 grid md:grid-cols-2 gap-8">
+          <div>
+            <ul class="space-y-2 text-sm">
+              <li><span class="font-medium">Email:</span>
+                <a class="underline decoration-dotted" href="mailto:karthik.aigen@gmail.com">karthik.aigen@gmail.com</a>
+              </li>
+              <li><span class="font-medium">LinkedIn:</span>
+                <a class="underline decoration-dotted" href="https://www.linkedin.com/in/karthik-y-786238271" target="_blank" rel="noopener">linkedin.com/in/karthik-y-786238271</a>
+              </li>
+              <li><span class="font-medium">GitHub:</span>
+                <a class="underline decoration-dotted" href="https://github.com/karthikaigen-4545" target="_blank" rel="noopener">github.com/karthikaigen-4545</a>
+              </li>
+              <li><span class="font-medium">Phone:</span>
+                <a class="underline decoration-dotted" href="tel:8722212232">872-221-2232</a>
+              </li>
+              <li><span class="font-medium">Location:</span> Chicago, USA</li>
+            </ul>
+            <div class="mt-5">
+              <a href="./karthik_y_resume.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white shadow-neon-sm">
+                Download Résumé
+              </a>
+            </div>
+          </div>
+
+          <form class="grid gap-3" action="mailto:karthik.aigen@gmail.com" method="post" enctype="text/plain">
+            <input class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70" required name="name" placeholder="Your name" />
+            <input class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70" required name="email" type="email" placeholder="Your email" />
+            <textarea class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70" required name="message" rows="4" placeholder="Your message"></textarea>
+            <button class="justify-self-start px-5 py-2.5 rounded-xl bg-sky-600 text-white hover:bg-sky-700">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/20 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div>© <span id="year"></span> Karthik Y. All rights reserved.</div>
+      <div class="flex items-center gap-4">
+        <a class="underline decoration-dotted" href="./karthik_y_resume.pdf" download>Résumé</a>
+        <a class="underline decoration-dotted" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const d = document.documentElement;
+      d.classList.toggle('dark');
+      localStorage.setItem('theme', d.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Minimal typewriter effect (no external libs)
+    const twEl = document.getElementById('tw');
+    const phrases = [
+      "LLM Agents • Prompt Chaining • RAG • Multimodal AI",
+      "Evaluation Pipelines • Hallucination Reduction • QA Automation",
+      "Vertex AI • Whisper • DALL·E • LangChain • LlamaIndex"
+    ];
+    let p = 0, i = 0, dir = 1;
+    function tick(){
+      const text = phrases[p].slice(0, i);
+      twEl.textContent = text;
+      i += dir;
+      if(i === phrases[p].length + 1){ dir = -1; setTimeout(tick, 1100); return; }
+      if(i === 0){ dir = 1; p = (p+1)%phrases.length; }
+      setTimeout(tick, dir>0 ? 28 : 14);
+    }
+    tick();
+  </script>
+</body>
+</html>
